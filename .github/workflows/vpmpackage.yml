@@ -23,7 +23,12 @@ jobs:
    steps:
      - uses: actions/checkout@v2
        with:
-        lfs: true
+        lfs: false
+
+     - name: Pull LFS objects
+       run: |
+         git lfs install
+         git lfs pull
 
      - run: |
          mkdir ./dist
