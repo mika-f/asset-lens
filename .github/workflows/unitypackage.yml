@@ -34,6 +34,9 @@ jobs:
 
          git lfs install
          git lfs pull
+       env:
+        GIT_CURL_VERBOSE: 1
+        GIT_TRACE: 1
 
      - run: |
          mkdir ./dist
