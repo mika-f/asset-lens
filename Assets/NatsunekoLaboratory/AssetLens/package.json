@@ -1,0 +1,24 @@
+{
+  "name": "cat.natsuneko.asset-lens",
+  "version": "1.0.0",
+  "description": "The fastest Unity asset reference search editor extension",
+  "displayName": "Asset Lens",
+  "unity": "2019.4",
+  "dependencies": {},
+  "vpmDependencies": {},
+  "legacyFolders": {
+    "Assets\\NatsunekoLaboratory\\AssetLens": "2e2ff1f9bfecb124c9f8ee17d5c42b02"
+  },
+  "license": "MIT",
+  "keywords": [
+    "Unity",
+    "Asset",
+    "Reference",
+    "Search"
+  ],
+  "author": {
+    "name": "Natsuneko",
+    "email": "me@natsuneko.cat",
+    "url": "https://natsuneko.cat"
+  }
+}
