@@ -26,7 +26,37 @@ namespace NatsunekoLaboratory.AssetLens
                 return instance;
             }
 
-            return CreateInstance<AssetLensSettingsStore>();
+            var defaults = CreateInstance<AssetLensSettingsStore>();
+            defaults.Excludes = new List<string>
+            {
+                // Script Files
+                "*.cs",
+                "*.vb",
+                "*.js",
+                "*.ts",
+                "*.md",
+                "*.shader",
+                "*.hlsl",
+                "*.hlslinc",
+                "*.glsl",
+                "*.glslinc",
+                "*.cg",
+                "*.cginc",
+                "*.json",
+
+                // Project Files
+                "*.csproj",
+                "*.vbproj",
+                "*.sln",
+
+                // Unity Cache Directories
+                "Library",
+                "obj",
+                "ProjectSettings",
+                "Temp"
+            };
+
+            return defaults;
         }
 
         public void Save()
