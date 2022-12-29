@@ -37,6 +37,7 @@ namespace NatsunekoLaboratory.AssetLens
 
             _list = new ReorderableList(excludes, typeof(string), true, false, true, true)
             {
+                drawHeaderCallback = rect => EditorGUI.LabelField(rect, "Exclude file and/or directory patterns by glob"),
                 drawNoneElementCallback = rect => EditorGUI.LabelField(rect, "No exclude directories/files in Asset Lens"),
                 drawElementCallback = (rect, index, active, focus) =>
                 {
